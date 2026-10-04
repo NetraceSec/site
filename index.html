@@ -1,61 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth h-full">
+<html lang="en" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netrace Security | Offensive Security & Cyber Risk Consultancy</title>
-    
-    <!-- Custom Tab Favicon -->
+    <title>Netrace Security | Offensive Security & Cyber Risk Advisory</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230b0f19'/><path d='M50 15 L80 30 V55 C80 72 50 87 50 87 C50 87 20 72 20 55 V30 Z' fill='none' stroke='%2338bdf8' stroke-width='6'/><path d='M38 62 V38 L62 62 V38' stroke='%23ffffff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0b0f19;
-            color: #9ca3af;
-        }
-        h1, h2, h3, h4, h5, h6, .brand-font {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .soft-glow {
-            box-shadow: 0 0 50px -10px rgba(56, 189, 248, 0.15);
-        }
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            border-color: rgba(56, 189, 248, 0.4);
-            box-shadow: 0 20px 40px -15px rgba(56, 189, 248, 0.15);
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f19; color: #9ca3af; }
+        h1, h2, h3, h4, .brand-font { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
 <body class="antialiased selection:bg-sky-500 selection:text-white min-h-screen flex flex-col justify-between bg-[#0b0f19] text-gray-300">
 
-    <!-- Navigation -->
-    <header class="sticky top-0 z-50 bg-[#0b0f19]/80 backdrop-blur-xl border-b border-white/10 w-full">
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-[#0b0f19]/90 backdrop-blur-xl border-b border-white/10 w-full">
         <nav class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex justify-between items-center">
-            <a href="#hero" class="brand-font text-xl font-extrabold tracking-wider text-white uppercase flex items-center gap-2 hover:text-sky-400 transition duration-200">
+            <a href="index.html" class="brand-font text-xl font-extrabold tracking-wider text-white uppercase flex items-center gap-2 hover:text-sky-400 transition">
                 NETRACE <span class="text-sky-400 font-normal text-sm tracking-widest border-l border-white/20 pl-2">SECURITY</span>
             </a>
             
             <div class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase text-gray-300">
-                <a href="#capabilities" class="hover:text-sky-400 transition-colors duration-200">Capabilities</a>
-                <a href="#research" class="hover:text-sky-400 transition-colors duration-200">Research & CVEs</a>
-                <a href="#services" class="hover:text-sky-400 transition-colors duration-200">Packages</a>
-                <a href="#contact" class="px-5 py-2.5 bg-sky-500/10 border border-sky-500/40 text-sky-400 hover:bg-sky-500 hover:text-slate-950 transition-all duration-200 rounded-xl font-bold">Inquire</a>
+                <a href="index.html" class="text-sky-400 font-bold border-b-2 border-sky-400 pb-1">Home</a>
+                <a href="services.html" class="hover:text-sky-400 transition">Services</a>
+                <a href="portfolio.html" class="hover:text-sky-400 transition">Portfolio & CVEs</a>
+                <a href="about.html" class="hover:text-sky-400 transition">About</a>
+                <a href="contact.html" class="px-5 py-2.5 bg-sky-500/10 border border-sky-500/40 text-sky-400 hover:bg-sky-500 hover:text-slate-950 transition rounded-xl font-bold">Contact</a>
             </div>
         </nav>
     </header>
 
-    <main class="flex-grow w-full">
+    <!-- Main Content -->
+    <main class="flex-grow">
         <!-- Hero Section -->
-        <section id="hero" class="relative py-28 lg:py-36 px-6 lg:px-8 overflow-hidden flex items-center justify-center border-b border-white/5">
+        <section class="relative py-28 lg:py-36 px-6 lg:px-8 overflow-hidden flex items-center justify-center border-b border-white/5">
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-sky-500/15 blur-[120px] rounded-full pointer-events-none"></div>
 
             <div class="max-w-5xl mx-auto text-center space-y-8 relative z-10">
@@ -69,252 +50,51 @@
                 </p>
 
                 <div class="pt-6 flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#services" class="px-8 py-4 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs uppercase tracking-widest transition-all duration-200 rounded-xl shadow-lg shadow-sky-500/25">
-                        View Service Offerings
+                    <a href="services.html" class="px-8 py-4 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs uppercase tracking-widest transition rounded-xl shadow-lg shadow-sky-500/25">
+                        Explore Services
                     </a>
-                    <a href="#contact" class="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/15 text-white font-semibold text-xs uppercase tracking-widest transition-all duration-200 rounded-xl backdrop-blur-sm">
-                        Request Advisory Call
+                    <a href="portfolio.html" class="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/15 text-white font-semibold text-xs uppercase tracking-widest transition rounded-xl">
+                        View Portfolio & Research
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Specialized Practice Areas (High-ROI Focus Domains) -->
-        <section id="capabilities" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-b border-white/5">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <span class="text-xs font-semibold uppercase tracking-widest text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">Practice Areas</span>
-                <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight">High-Impact Offensive Domains</h2>
-                <p class="text-gray-400 text-base">Targeted technical evaluations engineered for modern engineering stacks and cloud environments.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Practice 1: AppSec & API -->
-                <div class="p-8 border border-white/10 bg-white/[0.02] rounded-3xl card-hover space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 font-bold text-xl">01</div>
-                    <h3 class="text-xl font-bold text-white">Web App & API Security</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">
-                        Deep-dive manual penetration testing covering logic flaws, BOLA/IDOR, complex authorization bypassing, and custom API business logic risks.
-                    </p>
+        <!-- Brief Practice Overview -->
+        <section class="py-20 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 border border-white/10 bg-white/[0.02] rounded-3xl">
+                    <h3 class="text-xl font-bold text-white mb-2">AppSec & AI Red Teaming</h3>
+                    <p class="text-sm text-gray-400 mb-4">Deep web app, API, and prompt injection/RAG evaluations.</p>
+                    <a href="services.html" class="text-xs text-sky-400 font-bold uppercase tracking-wider hover:underline">Learn More &rarr;</a>
                 </div>
-
-                <!-- Practice 2: AI / LLM Offensive Security -->
-                <div class="p-8 border border-sky-500/30 bg-gradient-to-b from-sky-500/10 to-transparent rounded-3xl card-hover space-y-4 relative">
-                    <span class="absolute top-4 right-4 bg-sky-500/20 text-sky-300 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase border border-sky-500/30">Emerging Domain</span>
-                    <div class="w-12 h-12 rounded-2xl bg-sky-500/20 border border-sky-500/40 flex items-center justify-center text-sky-400 font-bold text-xl">02</div>
-                    <h3 class="text-xl font-bold text-white">AI & LLM Red Teaming</h3>
-                    <p class="text-sm text-gray-300 leading-relaxed">
-                        Offensive evaluations for GenAI applications: RAG poisoning, prompt injection vectors, model context leakage, and autonomous agent abuse.
-                    </p>
+                <div class="p-8 border border-white/10 bg-white/[0.02] rounded-3xl">
+                    <h3 class="text-xl font-bold text-white mb-2">Cloud & Identity Security</h3>
+                    <p class="text-sm text-gray-400 mb-4">Exploitation of toxic privilege paths and IAM misconfigurations.</p>
+                    <a href="services.html" class="text-xs text-sky-400 font-bold uppercase tracking-wider hover:underline">Learn More &rarr;</a>
                 </div>
-
-                <!-- Practice 3: Cloud Penetration Testing -->
-                <div class="p-8 border border-white/10 bg-white/[0.02] rounded-3xl card-hover space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 font-bold text-xl">03</div>
-                    <h3 class="text-xl font-bold text-white">Cloud Architecture & IAM</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">
-                        Exploitation of AWS/Azure toxic privilege paths, IAM escalation chains, serverless container breakout, and cloud infrastructure misconfigurations.
-                    </p>
+                <div class="p-8 border border-white/10 bg-white/[0.02] rounded-3xl">
+                    <h3 class="text-xl font-bold text-white mb-2">Supply Chain & CI/CD</h3>
+                    <p class="text-sm text-gray-400 mb-4">Auditing automated build pipelines and third-party dependencies.</p>
+                    <a href="services.html" class="text-xs text-sky-400 font-bold uppercase tracking-wider hover:underline">Learn More &rarr;</a>
                 </div>
-
-                <!-- Practice 4: CI/CD & Supply Chain -->
-                <div class="p-8 border border-white/10 bg-white/[0.02] rounded-3xl card-hover space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 font-bold text-xl">04</div>
-                    <h3 class="text-xl font-bold text-white">CI/CD Pipeline Security</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">
-                        Auditing GitHub Actions, GitLab pipelines, third-party dependency risks, secrets exposure, and software supply chain poisoning risks.
-                    </p>
-                </div>
-
-                <!-- Practice 5: Active Directory & Hybrid Identity -->
-                <div class="p-8 border border-white/10 bg-white/[0.02] rounded-3xl card-hover space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 font-bold text-xl">05</div>
-                    <h3 class="text-xl font-bold text-white">Identity & Privilege Escalation</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">
-                        Assessment of Active Directory, Entra ID, Kerberos attack paths, cross-domain trust relationships, and enterprise identity hygiene.
-                    </p>
-                </div>
-
-                <!-- Practice 6: Continuous Recon & Advisory -->
-                <div class="p-8 border border-white/10 bg-white/[0.02] rounded-3xl card-hover space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 font-bold text-xl">06</div>
-                    <h3 class="text-xl font-bold text-white">Executive Risk Advisory</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">
-                        Strategic technical consulting, remediation support for engineering teams, security program guidance, and executive threat briefings.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Drafted Research, Credentials & Vulnerability Disclosures Section -->
-        <section id="research" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-b border-white/5">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                <div class="lg:col-span-5 space-y-4">
-                    <span class="text-xs font-semibold uppercase tracking-widest text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">Authority & Proof</span>
-                    <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight leading-tight">Research & Disclosures</h2>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        A commitment to offensive security requires continuous research. Here we track public vulnerability disclosures, published CVEs, and security research write-ups.
-                    </p>
-                </div>
-
-                <div class="lg:col-span-7 space-y-6">
-                    <!-- CVE / Vulnerability Draft Card 1 -->
-                    <div class="p-6 rounded-2xl border border-white/10 bg-white/[0.02] space-y-2">
-                        <div class="flex justify-between items-center text-xs">
-                            <span class="font-mono text-sky-400 font-bold">[ CVE-202X-XXXX ]</span>
-                            <span class="text-gray-500">Public Disclosure</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white">Critical Logic Flaw in Enterprise API Middleware</h4>
-                        <p class="text-xs text-gray-400">Detailed vulnerability analysis of authorization bypass allowing unauthenticated tenant data access.</p>
-                    </div>
-
-                    <!-- VDP / Bounty Acknowledgment Card 2 -->
-                    <div class="p-6 rounded-2xl border border-white/10 bg-white/[0.02] space-y-2">
-                        <div class="flex justify-between items-center text-xs">
-                            <span class="font-mono text-sky-400 font-bold">[ VDP Acknowledgments ]</span>
-                            <span class="text-gray-500">Hall of Fame</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white">Responsible Disclosure Program Contributions</h4>
-                        <p class="text-xs text-gray-400">Recognized disclosures for Fortune 500 SaaS platforms and cloud service providers.</p>
-                    </div>
-
-                    <!-- Certifications & Qualifications Draft Card 3 -->
-                    <div class="p-6 rounded-2xl border border-white/10 bg-white/[0.02] space-y-2">
-                        <div class="flex justify-between items-center text-xs">
-                            <span class="font-mono text-sky-400 font-bold">[ Qualifications ]</span>
-                            <span class="text-gray-500">Credentials & Degrees</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white">Industry Certifications & Academic Master's</h4>
-                        <p class="text-xs text-gray-400">Advanced offensive security certifications (OSCP/OSWE/CRTO) and Master's degree background.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services & Packages Section -->
-        <section id="services" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-b border-white/5">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <span class="text-xs font-semibold uppercase tracking-widest text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">Packages & Engagement</span>
-                <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight">Structured Security Services</h2>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-                <!-- Tier 1 -->
-                <div class="p-8 border border-white/10 bg-white/[0.02] rounded-3xl card-hover flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-gray-400">Baseline Assessment</span>
-                        <h3 class="text-2xl font-bold text-white mt-1 mb-2">Targeted Audit</h3>
-                        <div class="text-4xl font-extrabold text-white my-6">$2,500 <span class="text-xs text-gray-500 font-normal">/ Project</span></div>
-                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
-                            Focused testing for small web applications or standalone API microservices. Fast turnaround with zero-noise actionable findings.
-                        </p>
-                    </div>
-                    <div class="space-y-3 pt-6 border-t border-white/10">
-                        <a href="#contact" class="block text-center w-full py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-bold uppercase tracking-wider transition rounded-xl">
-                            Inquire Now
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tier 2 -->
-                <div class="p-8 border-2 border-sky-500/80 bg-gradient-to-b from-sky-500/10 to-white/[0.02] rounded-3xl card-hover flex flex-col justify-between relative soft-glow">
-                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-sky-500 text-slate-950 text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest shadow-md">Recommended</span>
-                    <div>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-sky-400">Full Scope Penetration Test</span>
-                        <h3 class="text-2xl font-bold text-white mt-1 mb-2">Comprehensive Pentest</h3>
-                        <div class="text-4xl font-extrabold text-white my-6">$6,500 <span class="text-xs text-gray-500 font-normal">/ Assessment</span></div>
-                        <p class="text-sm text-gray-300 leading-relaxed mb-6">
-                            Deep manual evaluation across AppSec, AI integration, and cloud IAM logic chains. Includes SafePoC exploits and re-testing verification.
-                        </p>
-                    </div>
-                    <div class="space-y-3 pt-6 border-t border-white/10">
-                        <a href="#contact" class="block text-center w-full py-3 bg-sky-500 hover:bg-sky-400 text-slate-950 text-xs font-bold uppercase tracking-wider transition rounded-xl shadow-md shadow-sky-500/20">
-                            Inquire Now
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tier 3 -->
-                <div class="p-8 border border-white/10 bg-white/[0.02] rounded-3xl card-hover flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-gray-400">Continuous Security Partner</span>
-                        <h3 class="text-2xl font-bold text-white mt-1 mb-2">Security Advisory Retainer</h3>
-                        <div class="text-4xl font-extrabold text-white my-6">$10,000+ <span class="text-xs text-gray-500 font-normal">/ Retainer</span></div>
-                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
-                            Ongoing offensive testing, CI/CD pipeline auditing, continuous surface monitoring, and dedicated engineering advisory allocation.
-                        </p>
-                    </div>
-                    <div class="space-y-3 pt-6 border-t border-white/10">
-                        <a href="#contact" class="block text-center w-full py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-bold uppercase tracking-wider transition rounded-xl">
-                            Request Custom Quote
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-24 max-w-3xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-12 space-y-3">
-                <span class="text-xs font-semibold uppercase tracking-widest text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">Contact & Scoping</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Initiate an Advisory Discussion</h2>
-            </div>
-
-            <form action="#" method="POST" class="space-y-6 border border-white/10 p-8 sm:p-10 bg-white/[0.02] rounded-3xl backdrop-blur-sm">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div>
-                        <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Name</label>
-                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-sky-400 transition">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Email</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-sky-400 transition">
-                    </div>
-                </div>
-
-                <div>
-                    <label for="package" class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Area of Interest</label>
-                    <select id="package" name="package" class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-sky-400 transition">
-                        <option value="">Select Primary Focus...</option>
-                        <option value="AppSec & API Pentesting">Web App & API Security Pentest</option>
-                        <option value="AI / LLM Security">AI & LLM Red Teaming Assessment</option>
-                        <option value="Cloud & IAM">Cloud Architecture & IAM Escalation</option>
-                        <option value="CI/CD Supply Chain">CI/CD Pipeline & Supply Chain Security</option>
-                        <option value="Retainer">Continuous Advisory Retainer</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Project Scope & Requirements</label>
-                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-sky-400 transition" placeholder="Tell us about your technical stack or assessment timeline..."></textarea>
-                </div>
-
-                <button type="submit" class="w-full py-4 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs uppercase tracking-widest transition duration-200 rounded-xl shadow-lg shadow-sky-500/20">
-                    Submit Scoping Request
-                </button>
-            </form>
-
-            <div class="text-center mt-10">
-                <p class="text-sm text-gray-400">Encrypted communication channel: <a href="mailto:netracesec@proton.me" class="text-sky-400 hover:underline font-mono">netracesec@proton.me</a></p>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-white/10 bg-[#0b0f19] w-full">
+    <footer class="py-10 border-t border-white/10 bg-[#0b0f19] w-full">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="brand-font text-sm font-bold tracking-wider text-white uppercase">
                 NETRACE <span class="text-sky-400 font-normal">SECURITY</span>
             </div>
-            <p class="text-xs text-gray-500 font-mono">&copy; <span id="current-year"></span> Netrace Security. All rights reserved.</p>
-            <div class="flex space-x-6 text-xs text-gray-400 uppercase tracking-wider">
-                <a href="https://github.com/yourusername" target="_blank" class="hover:text-sky-400 transition">GitHub</a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-sky-400 transition">LinkedIn</a>
+            <p class="text-xs text-gray-500 font-mono">&copy; Netrace Security. All rights reserved.</p>
+            <div class="flex space-x-6 text-xs text-gray-400 uppercase">
+                <a href="portfolio.html" class="hover:text-sky-400 transition">CVEs</a>
+                <a href="services.html" class="hover:text-sky-400 transition">Services</a>
+                <a href="contact.html" class="hover:text-sky-400 transition">Contact</a>
             </div>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
