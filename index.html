@@ -3,194 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netrace Security | Cybersecurity Advisory & Penetration Testing</title>
+    <title>Netrace Security | Proactive Threat Intelligence & Penetration Testing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --brand-green: #86BC25;
-            --brand-dark: #0b0f17;
-            --card-bg: #111827;
-        }
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--brand-dark);
+            background-color: #0b0f19;
             color: #9ca3af;
         }
         h1, h2, h3, h4, h5, h6, .brand-font {
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
-        .deloitte-dot {
-            color: var(--brand-green);
+        .card-glow:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.15);
         }
     </style>
 </head>
-<body class="antialiased selection:bg-[#86BC25] selection:text-black">
+<body class="antialiased selection:bg-sky-500 selection:text-white">
 
     <!-- Header / Navigation -->
-    <header class="sticky top-0 z-50 bg-[#0b0f17]/90 backdrop-blur-md border-b border-white/10">
-        <nav class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex justify-between items-center">
-            <!-- Brand Logo -->
-            <a href="#hero" class="brand-font text-xl font-extrabold tracking-tight text-white uppercase flex items-center gap-1 hover:opacity-90 transition">
-                NETRACE<span class="deloitte-dot text-2xl font-black leading-none">&#9679;</span>
+    <header class="sticky top-0 z-50 bg-[#0b0f19]/90 backdrop-blur-md border-b border-white/10">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex justify-between items-center">
+            <!-- Brand Logo Top-Left -->
+            <a href="#hero" class="brand-font text-xl font-extrabold tracking-wider text-white uppercase flex items-center gap-2 hover:text-sky-400 transition duration-200">
+                NETRACE <span class="text-sky-400 font-normal text-sm tracking-widest border-l border-white/20 pl-2">SECURITY</span>
             </a>
             
-            <!-- Navigation Links -->
-            <div class="hidden md:flex items-center space-x-10 text-xs font-semibold tracking-widest uppercase text-gray-300">
-                <a href="#about" class="hover:text-white transition-colors duration-200">About</a>
-                <a href="#methodology" class="hover:text-white transition-colors duration-200">Capabilities</a>
-                <a href="#services" class="hover:text-white transition-colors duration-200">Advisory Solutions</a>
-                <a href="#contact" class="px-5 py-2.5 border border-white/20 text-white hover:border-[#86BC25] hover:text-[#86BC25] transition-all duration-200">Get In Touch</a>
+            <!-- Links -->
+            <div class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase text-gray-300">
+                <a href="#about" class="hover:text-sky-400 transition-colors duration-200">About</a>
+                <a href="#methodology" class="hover:text-sky-400 transition-colors duration-200">Advantage</a>
+                <a href="#services" class="hover:text-sky-400 transition-colors duration-200">Packages</a>
+                <a href="#contact" class="px-5 py-2.5 border border-sky-500/50 text-sky-400 hover:bg-sky-500 hover:text-white transition-all duration-200 rounded-sm">Contact Us</a>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="min-h-[90vh] flex items-center justify-center px-6 lg:px-12 py-24 relative overflow-hidden border-b border-white/5">
-            <div class="max-w-5xl mx-auto space-y-10 text-left w-full">
-                <div class="inline-flex items-center gap-2 px-3 py-1 border border-white/10 bg-white/[0.02] text-xs font-mono uppercase tracking-widest text-[#86BC25]">
-                    <span class="w-1.5 h-1.5 bg-[#86BC25]"></span> Cyber Risk Advisory & Threat Intelligence
+        <section id="hero" class="min-h-[88vh] flex items-center justify-center px-6 lg:px-8 py-20 border-b border-white/5 relative">
+            <div class="max-w-4xl mx-auto text-center space-y-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 border border-sky-500/30 bg-sky-500/5 text-xs font-mono uppercase tracking-widest text-sky-400 rounded-full">
+                    <span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse"></span> Threat Intelligence & Offensive Security
                 </div>
-                
-                <h1 class="text-4xl sm:text-6xl md:text-7xl font-light text-white leading-[1.1] tracking-tight">
-                    Proactive Threat Neutralization.<br>
-                    <span class="font-extrabold text-white">Uncompromised Trust<span class="deloitte-dot">&#9679;</span></span>
+
+                <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
+                    We Stop Zero-Days.<br>
+                    You <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Build Trust.</span>
                 </h1>
-                
-                <p class="text-lg md:text-xl text-gray-400 max-w-3xl font-normal leading-relaxed">
-                    Netrace delivers rigorous human-led penetration testing and threat intelligence for enterprise Web Applications and APIs. We identify critical vulnerabilities standard automation fails to detect.
+
+                <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
+                    Proactive security intelligence and deep-dive penetration testing for <b>Web Applications</b> and <b>APIs</b>. We find the flaws that automated tools miss.
                 </p>
-                
-                <div class="pt-4 flex flex-col sm:flex-row gap-4">
-                    <a href="#services" class="inline-flex justify-center items-center px-8 py-4 bg-white text-black font-semibold text-sm uppercase tracking-wider hover:bg-[#86BC25] transition-all duration-300">
-                        Explore Advisory Packages
+
+                <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#services" class="px-8 py-4 bg-sky-500 text-slate-950 font-bold text-xs uppercase tracking-widest hover:bg-sky-400 transition-all duration-200 rounded-sm shadow-lg shadow-sky-500/20">
+                        Explore Our Packages
                     </a>
-                    <a href="#contact" class="inline-flex justify-center items-center px-8 py-4 border border-white/20 text-white font-semibold text-sm uppercase tracking-wider hover:border-white transition-all duration-300">
-                        Schedule Executive Briefing
+                    <a href="#contact" class="px-8 py-4 border border-white/20 text-white font-semibold text-xs uppercase tracking-widest hover:border-sky-400 hover:text-sky-400 transition-all duration-200 rounded-sm">
+                        Request Advisory Call
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-24 max-w-7xl mx-auto px-6 lg:px-12 border-b border-white/5">
+        <section id="about" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-b border-white/5">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 <div class="lg:col-span-4">
-                    <p class="text-xs font-mono uppercase tracking-widest text-[#86BC25] mb-2">01 / Profile</p>
-                    <h2 class="text-3xl font-bold text-white tracking-tight">About Netrace Security</h2>
+                    <p class="text-xs font-mono uppercase tracking-widest text-sky-400 mb-2">// 01. ABOUT US</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Netrace Security</h2>
                 </div>
-                <div class="lg:col-span-8 space-y-8 text-lg font-light text-gray-300 leading-relaxed">
+                <div class="lg:col-span-8 space-y-6 text-lg font-light text-gray-300 leading-relaxed">
                     <p>
-                        Netrace Security is an elite cybersecurity consultancy specializing in strategic attack simulation and threat engineering. We help modern enterprises fortify critical digital infrastructure against enterprise-level threat vectors.
+                        Netrace Security delivers <b>tailored, actionable security intelligence</b>. Growing into a specialized cyber risk consultancy, we help businesses and engineering teams harden defenses against real-world threat actors.
                     </p>
                     <p>
-                        Our methodology prioritizes high-impact logic testing over superficial compliance checks. We translate complex security vulnerabilities into concise executive insights to drive decisive risk management.
+                        Our mission is simple: deliver <b>comprehensive penetration testing and strategic risk mitigation</b> that goes far beyond checkbox compliance. We translate technical vulnerabilities into prioritized executive insight.
                     </p>
-                    <blockquote class="border-l-2 border-[#86BC25] pl-6 py-2 text-white font-normal text-xl italic bg-white/[0.01]">
-                        "Automated tools uncover surface flaws. Human intelligence uncovers operational breaches."
+                    <blockquote class="border-l-2 border-sky-400 pl-6 py-3 text-white font-normal text-xl italic bg-white/[0.01]">
+                        "We don't just scan for vulnerabilities—we simulate a breach to <b>prove</b> the true risk."
                     </blockquote>
-                    
+
                     <div class="pt-6">
-                        <h3 class="text-sm font-semibold uppercase tracking-wider text-white mb-4">Core Practice Areas</h3>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider text-white mb-4">Core Focus Areas</h3>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm font-medium text-gray-200">
-                            <div class="p-4 border border-white/10 bg-white/[0.01]">Application & API Testing</div>
-                            <div class="p-4 border border-white/10 bg-white/[0.01]">Business Logic Exploitation</div>
-                            <div class="p-4 border border-white/10 bg-white/[0.01]">Continuous Attack Monitoring</div>
+                            <div class="p-4 border border-white/10 bg-[#111827] rounded-sm flex items-center gap-3">
+                                <span class="text-sky-400">❖</span> Web Application & API Pentesting
+                            </div>
+                            <div class="p-4 border border-white/10 bg-[#111827] rounded-sm flex items-center gap-3">
+                                <span class="text-sky-400">❖</span> Logic Flaw Hunting (BOLA/IDOR)
+                            </div>
+                            <div class="p-4 border border-white/10 bg-[#111827] rounded-sm flex items-center gap-3">
+                                <span class="text-sky-400">❖</span> Continuous Monitoring (CASM)
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Capabilities Section -->
-        <section id="methodology" class="py-24 max-w-7xl mx-auto px-6 lg:px-12 border-b border-white/5">
-            <p class="text-xs font-mono uppercase tracking-widest text-[#86BC25] mb-2">02 / Methodology</p>
-            <h2 class="text-3xl font-bold text-white tracking-tight mb-16">The Netrace Capability Advantage</h2>
-            
+        <!-- Methodology Section -->
+        <section id="methodology" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-b border-white/5">
+            <p class="text-xs font-mono uppercase tracking-widest text-sky-400 mb-2">// 02. ADVANTAGE</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-12">Finding What Automated Scanners Miss</h2>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 border border-white/10 bg-[#111827] flex flex-col justify-between">
+                <div class="p-8 border border-white/10 bg-[#111827] rounded-sm transition-all duration-300 card-glow flex flex-col justify-between">
                     <div>
-                        <div class="text-xs font-mono text-[#86BC25] mb-4">CAPABILITY 01</div>
-                        <h3 class="text-xl font-bold text-white mb-4">Logic Chain Engineering</h3>
-                        <p class="text-sm leading-relaxed text-gray-400">Multi-stage contextual attack scenarios designed to uncover workflow vulnerabilities that standard linear vulnerability scanners consistently overlook.</p>
+                        <div class="text-xs font-mono text-sky-400 mb-4">CAPABILITY 01</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Logic Chain Testing</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">We simulate multi-step attack scenarios (unauthorized purchase flows, chained privilege escalation) impossible for standard scanners. <b>Human-led exploitation is key.</b></p>
                     </div>
                 </div>
 
-                <div class="p-8 border border-white/10 bg-[#111827] flex flex-col justify-between">
+                <div class="p-8 border border-white/10 bg-[#111827] rounded-sm transition-all duration-300 card-glow flex flex-col justify-between">
                     <div>
-                        <div class="text-xs font-mono text-[#86BC25] mb-4">CAPABILITY 02</div>
-                        <h3 class="text-xl font-bold text-white mb-4">Advanced API Exploitation</h3>
-                        <p class="text-sm leading-relaxed text-gray-400">Deep-dive technical assessment targeting Broken Object Level Authorization (BOLA) and complex authentication boundary bypasses in core web services.</p>
+                        <div class="text-xs font-mono text-sky-400 mb-4">CAPABILITY 02</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Advanced API Abuse</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Deep testing for critical modern API flaws like <b>Broken Object Level Authorization (BOLA)</b> and <b>IDOR</b>—the primary threat vectors targeting web services.</p>
                     </div>
                 </div>
 
-                <div class="p-8 border border-white/10 bg-[#111827] flex flex-col justify-between">
+                <div class="p-8 border border-white/10 bg-[#111827] rounded-sm transition-all duration-300 card-glow flex flex-col justify-between">
                     <div>
-                        <div class="text-xs font-mono text-[#86BC25] mb-4">CAPABILITY 03</div>
-                        <h3 class="text-xl font-bold text-white mb-4">Continuous Reconnaissance</h3>
-                        <p class="text-sm leading-relaxed text-gray-400">24/7 intelligence telemetry providing delta analysis and instant risk notifications as new assets emerge across your digital perimeter.</p>
+                        <div class="text-xs font-mono text-sky-400 mb-4">CAPABILITY 03</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Live Recon Watchdog</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Continuous external monitoring and delta tracking to alert you the instant a new asset or vulnerability emerges across your external attack surface.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="py-24 max-w-7xl mx-auto px-6 lg:px-12 border-b border-white/5">
-            <p class="text-xs font-mono uppercase tracking-widest text-[#86BC25] mb-2">03 / Offerings</p>
-            <h2 class="text-3xl font-bold text-white tracking-tight mb-16">Engagement Options & Pricing</h2>
-            
+        <section id="services" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-b border-white/5">
+            <p class="text-xs font-mono uppercase tracking-widest text-sky-400 mb-2">// 03. PACKAGES</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-16">Security Offerings & Pricing</h2>
+
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
                 <!-- Tier 1 -->
-                <div class="p-8 border border-white/10 bg-[#111827] flex flex-col justify-between">
+                <div class="p-8 border border-white/10 bg-[#111827] rounded-sm flex flex-col justify-between">
                     <div>
-                        <div class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-2">Assessment Tier 01</div>
-                        <h3 class="text-2xl font-bold text-white mb-2">Basic Security Audit</h3>
-                        <div class="text-4xl font-extrabold text-white my-6">$1,999 <span class="text-xs text-gray-500 font-normal">/ Fixed Scope</span></div>
-                        <p class="text-sm text-gray-400 leading-relaxed mb-8">
-                            ScoutRun Adaptive Baseline. Full tech stack fingerprinting and high-confidence vulnerability verification. Built specifically for initial exposure baselines.
+                        <p class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-2">SECURITY BASELINE</p>
+                        <h3 class="text-2xl font-bold text-white mb-2">Tier 1: Basic Audit</h3>
+                        <div class="text-4xl font-extrabold text-white my-6">$1,999 <span class="text-xs text-gray-500 font-normal">/ Fixed</span></div>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                            <b>ScoutRun Adaptive Baseline</b>. Technology fingerprinting and adaptive checks tailored specifically to your technology stack for low-noise, high-confidence results.
                         </p>
                     </div>
-                    <div class="space-y-4 pt-6 border-t border-white/10">
-                        <a href="#contact" class="block text-center w-full py-3 border border-white/20 text-white font-semibold text-xs uppercase tracking-wider hover:bg-white hover:text-black transition duration-200">
-                            Select Engagement
+                    <div class="space-y-3 pt-6 border-t border-white/10">
+                        <a href="https://example.com/basic_sample.pdf" target="_blank" class="block text-center w-full py-2.5 border border-sky-500/40 text-sky-400 text-xs font-semibold uppercase tracking-wider hover:bg-sky-500/10 transition duration-200">
+                            View Sample Report (PDF)
+                        </a>
+                        <a href="#contact" class="block text-center w-full py-2.5 bg-sky-500 text-slate-950 text-xs font-bold uppercase tracking-wider hover:bg-sky-400 transition duration-200">
+                            Inquire Now
                         </a>
                     </div>
                 </div>
 
                 <!-- Tier 2 -->
-                <div class="p-8 border-2 border-[#86BC25] bg-[#111827] flex flex-col justify-between relative">
-                    <span class="absolute top-0 right-0 bg-[#86BC25] text-black text-[10px] font-bold px-3 py-1 uppercase tracking-widest">Recommended</span>
+                <div class="p-8 border-2 border-sky-500 bg-[#111827] rounded-sm flex flex-col justify-between relative shadow-xl shadow-sky-500/5">
+                    <span class="absolute top-0 right-0 bg-sky-500 text-slate-950 text-[10px] font-bold px-3 py-1 uppercase tracking-widest">Recommended</span>
                     <div>
-                        <div class="text-xs font-mono uppercase tracking-widest text-[#86BC25] mb-2">Assessment Tier 02</div>
-                        <h3 class="text-2xl font-bold text-white mb-2">Advanced Penetration Test</h3>
+                        <p class="text-xs font-mono uppercase tracking-widest text-sky-400 mb-2">CRITICAL RISK VALIDATION</p>
+                        <h3 class="text-2xl font-bold text-white mb-2">Tier 2: Advanced Test</h3>
                         <div class="text-4xl font-extrabold text-white my-6">$4,999 <span class="text-xs text-gray-500 font-normal">/ Project</span></div>
-                        <p class="text-sm text-gray-400 leading-relaxed mb-8">
-                            Complete contextual exploitation using SafePoC techniques. Validates high-impact vulnerabilities (SQLi, RCE, logic flaws) and cross-role session escalation.
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                            Includes Tier 1, plus full contextual chaining, SafePoC engine exploitation, multi-role session testing, and validated exploit documentation.
                         </p>
                     </div>
-                    <div class="space-y-4 pt-6 border-t border-white/10">
-                        <a href="#contact" class="block text-center w-full py-3 bg-[#86BC25] text-black font-semibold text-xs uppercase tracking-wider hover:bg-white transition duration-200">
-                            Select Engagement
+                    <div class="space-y-3 pt-6 border-t border-white/10">
+                        <a href="https://example.com/advanced_sample.pdf" target="_blank" class="block text-center w-full py-2.5 border border-sky-500/40 text-sky-400 text-xs font-semibold uppercase tracking-wider hover:bg-sky-500/10 transition duration-200">
+                            View Sample Report (PDF)
+                        </a>
+                        <a href="#contact" class="block text-center w-full py-2.5 bg-sky-500 text-slate-950 text-xs font-bold uppercase tracking-wider hover:bg-sky-400 transition duration-200">
+                            Inquire Now
                         </a>
                     </div>
                 </div>
 
                 <!-- Tier 3 -->
-                <div class="p-8 border border-white/10 bg-[#111827] flex flex-col justify-between">
+                <div class="p-8 border border-white/10 bg-[#111827] rounded-sm flex flex-col justify-between">
                     <div>
-                        <div class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-2">Assessment Tier 03</div>
-                        <h3 class="text-2xl font-bold text-white mb-2">Strategic Security Partner</h3>
+                        <p class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-2">CONTINUOUS PARTNERSHIP</p>
+                        <h3 class="text-2xl font-bold text-white mb-2">Tier 3: Complete Partner</h3>
                         <div class="text-4xl font-extrabold text-white my-6">$8,500+ <span class="text-xs text-gray-500 font-normal">/ Retainer</span></div>
-                        <p class="text-sm text-gray-400 leading-relaxed mb-8">
-                            Continuous red-team business logic testing, advanced API security monitoring, and persistent external asset telemetry for enterprise platforms.
+                        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                            Continuous red team logic testing, Live Recon Watchdog continuous delta tracking, and dedicated monthly allocation for complex API testing.
                         </p>
                     </div>
-                    <div class="space-y-4 pt-6 border-t border-white/10">
-                        <a href="#contact" class="block text-center w-full py-3 border border-white/20 text-white font-semibold text-xs uppercase tracking-wider hover:bg-white hover:text-black transition duration-200">
-                            Request Advisory Scope
+                    <div class="space-y-3 pt-6 border-t border-white/10">
+                        <a href="https://example.com/elite_sample.pdf" target="_blank" class="block text-center w-full py-2.5 border border-sky-500/40 text-sky-400 text-xs font-semibold uppercase tracking-wider hover:bg-sky-500/10 transition duration-200">
+                            View Sample Report (PDF)
+                        </a>
+                        <a href="#contact" class="block text-center w-full py-2.5 bg-sky-500 text-slate-950 text-xs font-bold uppercase tracking-wider hover:bg-sky-400 transition duration-200">
+                            Request Quote
                         </a>
                     </div>
                 </div>
@@ -198,61 +209,62 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-24 max-w-4xl mx-auto px-6 lg:px-12">
+        <section id="contact" class="py-24 max-w-3xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-12">
-                <p class="text-xs font-mono uppercase tracking-widest text-[#86BC25] mb-2">04 / Connect</p>
-                <h2 class="text-3xl font-bold text-white tracking-tight">Initiate an Engagement</h2>
+                <p class="text-xs font-mono uppercase tracking-widest text-sky-400 mb-2">// 04. CONTACT</p>
+                <h2 class="text-3xl font-bold text-white tracking-tight">Get In Touch</h2>
+                <p class="text-sm text-gray-400 mt-2">Ready to secure your platform? Reach out to schedule a scoping discussion.</p>
             </div>
 
-            <form action="#" method="POST" class="space-y-6 border border-white/10 p-8 sm:p-12 bg-[#111827]">
+            <form action="#" method="POST" class="space-y-6 border border-white/10 p-8 sm:p-10 bg-[#111827] rounded-sm">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label for="name" class="block text-xs font-mono uppercase tracking-wider text-gray-400 mb-2">Full Name</label>
-                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-[#0b0f17] border border-white/10 text-white text-sm focus:outline-none focus:border-[#86BC25] transition">
+                        <label for="name" class="block text-xs font-mono uppercase tracking-wider text-gray-400 mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 text-white text-sm focus:outline-none focus:border-sky-400 transition">
                     </div>
                     <div>
-                        <label for="email" class="block text-xs font-mono uppercase tracking-wider text-gray-400 mb-2">Corporate Email</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-[#0b0f17] border border-white/10 text-white text-sm focus:outline-none focus:border-[#86BC25] transition">
+                        <label for="email" class="block text-xs font-mono uppercase tracking-wider text-gray-400 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 text-white text-sm focus:outline-none focus:border-sky-400 transition">
                     </div>
                 </div>
 
                 <div>
-                    <label for="package" class="block text-xs font-mono uppercase tracking-wider text-gray-400 mb-2">Scope of Interest</label>
-                    <select id="package" name="package" class="w-full px-4 py-3 bg-[#0b0f17] border border-white/10 text-white text-sm focus:outline-none focus:border-[#86BC25] transition">
-                        <option value="">Select scope option...</option>
-                        <option value="Tier 1">Tier 01: Basic Security Audit ($1,999)</option>
-                        <option value="Tier 2">Tier 02: Advanced Penetration Test ($4,999)</option>
-                        <option value="Tier 3">Tier 03: Strategic Security Partner ($8,500+)</option>
-                        <option value="General">Custom Enterprise Advisory</option>
+                    <label for="package" class="block text-xs font-mono uppercase tracking-wider text-gray-400 mb-2">Interested Package</label>
+                    <select id="package" name="package" class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 text-white text-sm focus:outline-none focus:border-sky-400 transition">
+                        <option value="">Select an option...</option>
+                        <option value="Tier 1">Tier 1: Basic Audit ($1,999)</option>
+                        <option value="Tier 2">Tier 2: Advanced Penetration Test ($4,999)</option>
+                        <option value="Tier 3">Tier 3: Complete Security Partner ($8,500+)</option>
+                        <option value="General">General Inquiry</option>
                     </select>
                 </div>
 
                 <div>
-                    <label for="message" class="block text-xs font-mono uppercase tracking-wider text-gray-400 mb-2">Project Brief</label>
-                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 bg-[#0b0f17] border border-white/10 text-white text-sm focus:outline-none focus:border-[#86BC25] transition"></textarea>
+                    <label for="message" class="block text-xs font-mono uppercase tracking-wider text-gray-400 mb-2">Describe Your Needs</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 text-white text-sm focus:outline-none focus:border-sky-400 transition"></textarea>
                 </div>
 
-                <button type="submit" class="w-full py-4 bg-[#86BC25] text-black font-bold text-xs uppercase tracking-widest hover:bg-white transition duration-200">
-                    Submit Confidential Inquiry
+                <button type="submit" class="w-full py-4 bg-sky-500 text-slate-950 font-bold text-xs uppercase tracking-widest hover:bg-sky-400 transition duration-200">
+                    Send Secure Inquiry
                 </button>
             </form>
 
-            <div class="text-center mt-12">
-                <p class="text-sm text-gray-400">Direct encrypted channel: <a href="mailto:netracesec@proton.me" class="text-white hover:text-[#86BC25] font-mono underline">netracesec@proton.me</a></p>
+            <div class="text-center mt-10">
+                <p class="text-sm text-gray-400">Direct encrypted channel: <a href="mailto:netracesec@proton.me" class="text-sky-400 hover:underline font-mono">netracesec@proton.me</a></p>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-white/10 bg-[#0b0f17]">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="brand-font text-base font-bold tracking-tight text-white uppercase">
-                NETRACE<span class="deloitte-dot">&#9679;</span>
+    <footer class="py-12 border-t border-white/10 bg-[#0b0f19]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="brand-font text-sm font-bold tracking-wider text-white uppercase">
+                NETRACE <span class="text-sky-400 font-normal">SECURITY</span>
             </div>
-            <p class="text-xs text-gray-500 font-mono">&copy; <span id="current-year"></span> Netrace Security Advisory LLC. All Rights Reserved.</p>
+            <p class="text-xs text-gray-500 font-mono">&copy; <span id="current-year"></span> Netrace Security. All rights reserved.</p>
             <div class="flex space-x-6 text-xs text-gray-400 uppercase tracking-wider">
-                <a href="https://github.com/yourusername" target="_blank" class="hover:text-white transition">GitHub</a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-white transition">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank" class="hover:text-sky-400 transition">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-sky-400 transition">LinkedIn</a>
             </div>
         </div>
     </footer>
