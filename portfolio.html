@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & CVE Disclosures | Netrace Security</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f19; color: #9ca3af; }
+        h1, h2, h3, h4, .brand-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="antialiased selection:bg-sky-500 selection:text-white min-h-screen flex flex-col justify-between bg-[#0b0f19] text-gray-300">
+
+    <header class="sticky top-0 z-50 bg-[#0b0f19]/90 backdrop-blur-xl border-b border-white/10 w-full">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex justify-between items-center">
+            <a href="index.html" class="brand-font text-xl font-extrabold tracking-wider text-white uppercase">
+                NETRACE <span class="text-sky-400 font-normal text-sm tracking-widest border-l border-white/20 pl-2">SECURITY</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase text-gray-300">
+                <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+                <a href="services.html" class="hover:text-sky-400 transition">Services</a>
+                <a href="portfolio.html" class="text-sky-400 font-bold border-b-2 border-sky-400 pb-1">Portfolio & CVEs</a>
+                <a href="about.html" class="hover:text-sky-400 transition">About</a>
+                <a href="contact.html" class="px-5 py-2.5 bg-sky-500/10 border border-sky-500/40 text-sky-400 hover:bg-sky-500 hover:text-slate-950 transition rounded-xl font-bold">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow py-20 max-w-7xl mx-auto px-6 lg:px-8 space-y-16">
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+            <span class="text-xs font-semibold uppercase tracking-widest text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">Track Record & Authority</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight">Proof of Expertise</h1>
+            <p class="text-gray-400">Public vulnerability research, published CVEs, and security disclosures.</p>
+        </div>
+
+        <!-- CVE & Disclosure Grid -->
+        <div class="space-y-6 max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-white border-b border-white/10 pb-3">Public Vulnerability Disclosures (CVEs)</h2>
+            
+            <!-- Draft Placeholders -->
+            <div class="p-6 rounded-2xl border border-white/10 bg-white/[0.02] space-y-2">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="font-mono text-sky-400 font-bold">[ CVE-202X-XXXX ]</span>
+                    <span class="text-gray-500">Public Advisory</span>
+                </div>
+                <h3 class="text-lg font-bold text-white">Critical Authorization Bypass in Cloud API Middleware</h3>
+                <p class="text-xs text-gray-400">Discovered and responsibly disclosed broken object-level authorization vulnerability allowing multi-tenant cross-account exposure.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl border border-white/10 bg-white/[0.02] space-y-2">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="font-mono text-sky-400 font-bold">[ CVE-202X-YYYY ]</span>
+                    <span class="text-gray-500">Public Advisory</span>
+                </div>
+                <h3 class="text-lg font-bold text-white">RAG Data Injection Vector in Enterprise GenAI Framework</h3>
+                <p class="text-xs text-gray-400">Engineered indirect prompt injection exploit bypassing system prompt constraints to extract sensitive vector store embeddings.</p>
+            </div>
+        </div>
+
+        <!-- VDPs & Hall of Fame -->
+        <div class="space-y-6 max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-white border-b border-white/10 pb-3">Vulnerability Disclosure Programs (VDPs)</h2>
+            
+            <div class="p-6 rounded-2xl border border-white/10 bg-white/[0.02] space-y-2">
+                <span class="font-mono text-xs text-sky-400 font-bold">[ Responsible Disclosure ]</span>
+                <h3 class="text-lg font-bold text-white">SaaS Platform & Cloud Provider Acknowledgments</h3>
+                <p class="text-xs text-gray-400">Recognized for security findings across enterprise SaaS providers, infrastructure platforms, and web applications.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-10 border-t border-white/10 bg-[#0b0f19] w-full text-center text-xs text-gray-500">
+        &copy; Netrace Security. All rights reserved.
+    </footer>
+</body>
+</html>
