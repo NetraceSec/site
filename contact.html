@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Netrace Security</title>
+    <title>Initiate Scope | Netrace Security</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -13,30 +13,40 @@
 </head>
 <body class="antialiased selection:bg-sky-500 selection:text-white min-h-screen flex flex-col justify-between bg-[#0b0f19] text-gray-300">
 
-    <header class="sticky top-0 z-50 bg-[#0b0f19]/90 backdrop-blur-xl border-b border-white/10 w-full">
-        <nav class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex justify-between items-center">
-            <a href="index.html" class="brand-font text-xl font-extrabold tracking-wider text-white uppercase">
-                NETRACE <span class="text-sky-400 font-normal text-sm tracking-widest border-l border-white/20 pl-2">SECURITY</span>
+    <header class="sticky top-0 z-50 bg-[#0b0f19]/95 backdrop-blur-xl border-b border-white/10 w-full h-20">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex justify-between items-center">
+            <a href="index.html" class="brand-font text-lg sm:text-xl font-extrabold tracking-wider text-white uppercase flex items-center gap-2 hover:text-sky-400 transition shrink-0">
+                NETRACE <span class="text-sky-400 font-normal text-xs sm:text-sm tracking-widest border-l border-white/20 pl-2">SECURITY</span>
             </a>
             
             <div class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase text-gray-300">
                 <a href="index.html" class="hover:text-sky-400 transition">Home</a>
-                <a href="services.html" class="hover:text-sky-400 transition">Services</a>
-                <a href="portfolio.html" class="hover:text-sky-400 transition">Portfolio & CVEs</a>
-                <a href="about.html" class="hover:text-sky-400 transition">About</a>
-                <a href="contact.html" class="text-sky-400 font-bold border-b-2 border-sky-400 pb-1">Contact</a>
+                <a href="services.html" class="hover:text-sky-400 transition">Services & Scopes</a>
+                <a href="about.html" class="hover:text-sky-400 transition">About & Portfolio</a>
+                <a href="contact.html" class="text-sky-400 font-bold border-b-2 border-sky-400 pb-1">Initiate Scope</a>
             </div>
+
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
         </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0b0f19] border-b border-white/10 px-6 py-6 space-y-4 text-sm font-semibold tracking-wider uppercase">
+            <a href="index.html" class="block text-gray-300 hover:text-sky-400">Home</a>
+            <a href="services.html" class="block text-gray-300 hover:text-sky-400">Services & Scopes</a>
+            <a href="about.html" class="block text-gray-300 hover:text-sky-400">About & Portfolio</a>
+            <a href="contact.html" class="block text-sky-400 font-bold">Initiate Scope</a>
+        </div>
     </header>
 
-    <main class="flex-grow py-20 max-w-3xl mx-auto px-6 lg:px-8">
+    <main class="flex-grow py-16 sm:py-24 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12 space-y-3">
-            <span class="text-xs font-semibold uppercase tracking-widest text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">Scoping & Advisory</span>
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">Initiate an Inquire</h1>
-            <p class="text-gray-400">Request a scoping conversation or advisory call.</p>
+            <span class="text-xs font-semibold uppercase tracking-widest text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">Initiate Scoping Discussion</span>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">Request Advisory Call</h1>
+            <p class="text-gray-400 text-sm">Provide your project parameters to receive a formal scoping proposal.</p>
         </div>
 
-        <form action="#" method="POST" class="space-y-6 border border-white/10 p-8 sm:p-10 bg-white/[0.02] rounded-3xl backdrop-blur-sm">
+        <form action="#" method="POST" class="space-y-6 border border-white/10 p-6 sm:p-10 bg-white/[0.02] rounded-3xl backdrop-blur-sm">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                     <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Name</label>
@@ -49,24 +59,23 @@
             </div>
 
             <div>
-                <label for="package" class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Area of Focus</label>
-                <select id="package" name="package" class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-sky-400 transition">
-                    <option value="">Select Focus Area...</option>
-                    <option value="AppSec & API Pentesting">Web App & API Security Pentest</option>
-                    <option value="AI / LLM Security">AI & LLM Red Teaming</option>
-                    <option value="Cloud & IAM">Cloud Architecture & IAM Escalation</option>
-                    <option value="CI/CD Supply Chain">CI/CD Pipeline Security</option>
-                    <option value="Retainer">Continuous Advisory Retainer</option>
+                <label for="scope" class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Primary Domain Focus</label>
+                <select id="scope" name="scope" class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-sky-400 transition">
+                    <option value="appsec">Web Application & API Security</option>
+                    <option value="ai-llm">AI & LLM Red Teaming</option>
+                    <option value="cloud-iam">Cloud Exploitation & IAM Privilege Paths</option>
+                    <option value="cicd">CI/CD Pipeline & Supply Chain</option>
+                    <option value="bespoke">Tailored Multi-Domain / Retainer Package</option>
                 </select>
             </div>
 
             <div>
-                <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Scope Overview</label>
-                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-sky-400 transition" placeholder="Provide details on your scope, application architecture, or timelines..."></textarea>
+                <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Technical Overview & Timelines</label>
+                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 bg-[#0b0f19] border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-sky-400 transition" placeholder="Tell us about your technical stack, endpoints, or target assessment window..."></textarea>
             </div>
 
             <button type="submit" class="w-full py-4 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs uppercase tracking-widest transition rounded-xl shadow-lg shadow-sky-500/20">
-                Submit Inquiry
+                Submit Scoping Request
             </button>
         </form>
 
@@ -78,5 +87,24 @@
     <footer class="py-10 border-t border-white/10 bg-[#0b0f19] w-full text-center text-xs text-gray-500">
         &copy; Netrace Security. All rights reserved.
     </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+
+        // Auto-select dropdown option if query string present
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedScope = urlParams.get('scope');
+        if (selectedScope) {
+            const selectElem = document.getElementById('scope');
+            for (let i = 0; i < selectElem.options.length; i++) {
+                if (selectElem.options[i].value.includes(selectedScope) || selectedScope.includes(selectElem.options[i].value)) {
+                    selectElem.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    </script>
 </body>
 </html>
